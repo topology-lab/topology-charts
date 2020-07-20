@@ -1,1 +1,1 @@
-web: gunicorn topologycharts.wsgi --log-file -
+web: gunicorn composeexample.wsgi --log-file -
