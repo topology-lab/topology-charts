@@ -15,3 +15,7 @@ RUN set -x && \
 RUN pip install -r requirements.txt
 ADD . /code/
 
+#RUN useradd -m myuser
+#USER myuser
+
+CMD exec gunicorn -b 0.0.0.0:$PORT main.wsgi

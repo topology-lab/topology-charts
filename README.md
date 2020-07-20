@@ -5,22 +5,24 @@ graph app with HighCharts
 
 
 
-## Changes
+## Update
 - 2020/07/19
-  - ‰½ì‚é‚©A\¬l‚¦‚½‚è‚µ‚½Œ‹‰ÊAˆø‚«‘±‚«python‚Ì•×‹­‚àŒ“‚Ë‚ÄDjango‚µ‚Ä‚İ‚éB
-  - Œ³‚ÌƒvƒƒWƒFƒNƒg‚Íg‚Á‚Ä‚È‚¢‚µ‘S•”Ì‚Ä‚éB
-  - Šµ‚ê‚é‚½‚ß‚Édocker‚ÅB
-  - docker offical‚Ìè‡‚ÅFX“®‚©‚È‚¢B
+  - ä½•ä½œã‚‹ã‹ã€æ§‹æˆè€ƒãˆãŸã‚Šã—ãŸçµæœã€å¼•ãç¶šãpythonã®å‹‰å¼·ã‚‚å…¼ã­ã¦Djangoè©¦ã—ã¦ã¿ã‚‹ã€‚
+  - å…ƒã®ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã¯ä½¿ã£ã¦ãªã„ã—å…¨éƒ¨æ¨ã¦ã‚‹ã€‚
+  - æ…£ã‚Œã‚‹ãŸã‚ã«dockerã§ã€‚
+  - docker officalã®æ‰‹é †ã§è‰²ã€…å‹•ã‹ãªã„ã€‚
     - https://docs.docker.jp/compose/django.html
-  - ƒRƒ}ƒ“ƒh‚ÆƒGƒ‰[
+  - ã‚³ãƒãƒ³ãƒ‰ã¨ã‚¨ãƒ©ãƒ¼
     - docker-compose run web django-admin.py startproject composeexample .
     - composeexample/wsgi.py already exists, overlaying a project or app into an existing directory won't replace conflicting files
-  - FX©“®¶¬‚³‚ê‚éƒtƒ@ƒCƒ‹‚ª‚ ‚Á‚ÄA‚»‚ê‚ç‚ª×–‚‚·‚é‚æ‚¤‚¾‚Á‚½‚©‚çÁ‚µ‚½‚èÀs‚µ‚½‚è‚µ‚½B
+  - è‰²ã€…è‡ªå‹•ç”Ÿæˆã•ã‚Œã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã£ã¦ã€ãã‚Œã‚‰ãŒé‚ªé­”ã™ã‚‹ã‚ˆã†ã ã£ãŸã‹ã‚‰æ¶ˆã—ãŸã‚Šå®Ÿè¡Œã—ãŸã‚Šã—ãŸã€‚
     - https://qiita.com/breakthrough/items/9929eefd11eefa255530
-  - postgresql‹N“®‚ÉƒGƒ‰[
+  - postgresqlèµ·å‹•æ™‚ã«ã‚¨ãƒ©ãƒ¼
     - Error: Database is uninitialized and superuser password is not specified.
-    - ƒƒbƒZ[ƒW’Ê‚èdocker-compose.yml‚ÉŠÂ‹«•Ï”İ’è’Ç‰ÁB
-  - ƒRƒR‚Ü‚Å—ˆ‚Ä‰pŒê‚Ì‚Ù‚¤‚ªÅV‰»‚Å‚«‚Ä‚¢‚é‚æ‚¤‚¾‚Á‚½‚Ì‚ÅQÆæ‚ğ•Ï‚¦‚éB
+    - ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸é€šã‚Šdocker-compose.ymlã«ç’°å¢ƒå¤‰æ•°è¨­å®šè¿½åŠ ã€‚
+  - ã‚³ã‚³ã¾ã§æ¥ã¦è‹±èªã®ã»ã†ãŒæœ€æ–°åŒ–ã§ãã¦ã„ã‚‹ã‚ˆã†ã ã£ãŸã®ã§å‚ç…§å…ˆã‚’å¤‰ãˆã‚‹ã€‚
     - https://docs.docker.com/compose/django/
-
+- 2020/07/20
+  - å‚è€ƒã«HerokuåŒ–ã«ã™ã‚‹
+    - https://tksmml.hatenablog.com/entry/2019/04/19/000000
 

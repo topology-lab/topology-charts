@@ -11,6 +11,8 @@ services:
   web:
     build: .
     container_name: web
+    environment:
+      - DJANGO_SETTINGS_MODULE=composeexample.settings_development
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
