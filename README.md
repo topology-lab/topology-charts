@@ -25,4 +25,12 @@ graph app with HighCharts
 - 2020/07/20
   - 参考にHeroku化にする
     - https://tksmml.hatenablog.com/entry/2019/04/19/000000
-
+- 2020/07/21
+  - オフィシャルのチュートリアルでDjango学習中
+    - https://docs.djangoproject.com/ja/3.0/intro/tutorial02/
+  - /admin/のログイン後にCSRFチェックのエラー
+    - Docker環境で動かしてるからか、そもそものDjangoのテンプレートが悪いのでは？と疑っている。
+    - 以下類似
+      - https://stackoverflow.com/questions/41343643/django-forbidden-403-csrf-verification-failed-request-aborted-in-docker-p
+      - https://qiita.com/kenji0302/items/6976041827e03d3b2b3c
+    - adminのデフォルトテンプレートをoverride出来ると思うので、方法を検索中
