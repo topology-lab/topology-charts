@@ -34,3 +34,14 @@ graph app with HighCharts
       - https://stackoverflow.com/questions/41343643/django-forbidden-403-csrf-verification-failed-request-aborted-in-docker-p
       - https://qiita.com/kenji0302/items/6976041827e03d3b2b3c
     - adminのデフォルトテンプレートをoverride出来ると思うので、方法を検索中
+      - https://stackoverflow.com/questions/49533814/customize-django-admin-template
+      - https://torina.top/detail/232/
+      - https://qiita.com/Daisuke0209/items/059b0c53283dcf6536e8
+- 2020/07/22
+  - Heroku上だとadminページでログイン出来た。Dockerコンテナが原因っぽい？一旦無視してチュートリアルを進める。
+    - 
+  - ステージングとはいえ戻すのが面倒なのでbranchきった。＞feature
+- テンプレ
+  - あ
+    - い
+
