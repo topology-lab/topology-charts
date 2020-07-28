@@ -26,6 +26,8 @@ class IndexView(generic.ListView):
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
+#        create_question()
+
         """
         Return the last five published questions (not including those set to be
         published in the future).
@@ -33,6 +35,13 @@ class IndexView(generic.ListView):
         return Question.objects.filter(
             pub_date__lte=timezone.now()
         ).order_by('-pub_date')[:5]
+
+# デバッグコード
+# adminページからデータ登録出来るようになったら（＝postでCSRFのエラーでなくなったら）消す。
+def create_question():
+    question_text = "What your name?"
+    time = timezone.now()
+    return Question.objects.create(question_text=question_text, pub_date=time)
 
 
 class DetailView(generic.DetailView):
