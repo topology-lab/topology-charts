@@ -39,9 +39,19 @@ graph app with HighCharts
       - https://qiita.com/Daisuke0209/items/059b0c53283dcf6536e8
 - 2020/07/22
   - Heroku上だとadminページでログイン出来た。Dockerコンテナが原因っぽい？一旦無視してチュートリアルを進める。
-    - 
   - ステージングとはいえ戻すのが面倒なのでbranchきった。＞feature
+- 2020/07/28
+  - docker-composeでのコンテナでデバッグできない（POSTするとCSRF関連のエラーが出る）問題が煩わしいため色々試す方向で動くことにした。
+  - その前に誤ってコンテナを消してしまってダミーデータも消える事故に遭遇したため、PostgreSQLのDBはローカルディスクに永続化したく調査を開始。
+    - volumesで指定してもファイルが作成されない、、、？
+      - data directory "/var/lib/postgresql/data" has wrong ownership
+    - top level named volumeでもだめだった。
+    - PostgreSQLはホストでマウントしてるWindowsのディスクを指定できなくて問題になっているらしいので、この方法で試してなんとか成功。
+      - https://qiita.com/ko-da-k/items/47b96883144a5bf1cb1e
+      - dockerホスト上で管理されているので、docker-compose downしても消えない。
+      - Mysqlは大丈夫らしい。未確認。
+      - 「docker exec -it web python manage.py migrate」毎回しなくてもいいけど初回は必要。スキーマ変更しても必要。
+
 - テンプレ
   - あ
     - い
-
